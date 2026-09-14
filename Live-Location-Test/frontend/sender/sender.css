@@ -1,0 +1,49 @@
+:root {
+  color: #132321;
+  background: #f5f4ed;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  box-sizing: border-box;
+  margin: 12vh auto;
+  max-width: 560px;
+  padding: 24px;
+}
+
+.eyebrow {
+  color: #0d6b68;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 8vw, 4rem);
+  margin: 12px 0;
+}
+
+p {
+  color: #667571;
+  line-height: 1.5;
+}
+
+button {
+  background: #132321;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+  padding: 15px;
+  width: 100%;
+}
+
+button[data-sharing="true"] {
+  background: #a33b35;
+}

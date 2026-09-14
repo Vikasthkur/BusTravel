@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Profile | BusTravel</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="topbar">
+		<a class="brand" href="../home/index.html"><span class="brand-mark">B</span>BusTravel</a>
+		<a class="back-link" href="../home/index.html">&#8592; Home</a>
+	</header>
+
+	<main>
+		<section class="profile-hero">
+			<p class="eyebrow">YOUR BUS TRAVEL SPACE</p>
+			<h1>Profile</h1>
+			<p>Keep your buses, routes, and live location controls in one place.</p>
+		</section>
+
+		<section class="guest-panel" id="guestProfile" aria-labelledby="guest-title">
+			<div class="avatar" aria-hidden="true">?</div>
+			<div>
+				<p class="status-label">GUEST ACCOUNT</p>
+				<h2 id="guest-title">Sign in to manage buses</h2>
+				<p class="muted">Create one account for all your buses. Passenger browsing stays available without an account.</p>
+				<div class="account-actions">
+					<a class="primary-button" href="../login/index.html">Log in</a>
+					<a class="secondary-button" href="../signup/index.html">Create account</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="logged-panel" id="loggedProfile" aria-labelledby="logged-title" hidden>
+			<div class="avatar" aria-hidden="true">&#9673;</div>
+			<div><p class="status-label">BUS OWNER ACCOUNT</p><h2 id="logged-title"><span id="userName">User Name</span></h2><p class="muted" id="userContact">Mobile / Email</p></div>
+		</section>
+
+		<section class="owner-actions" id="ownerActions" hidden>
+			<a class="owner-card" href="../mybuses/index.html"><span class="menu-icon">&#9632;</span><span><strong>My Buses</strong><small>Manage your buses</small></span><span class="arrow">&#8599;</span></a>
+			<a class="owner-card" href="../addbus/index.html"><span class="menu-icon">&#43;</span><span><strong>Add Bus</strong><small>Add a new bus and route</small></span><span class="arrow">&#8599;</span></a>
+			<a class="owner-card" href="../live-location/index.html"><span class="menu-icon">&#9678;</span><span><strong>Live Location</strong><small><span class="live-dot">&#9679;</span> OFF</small></span><span class="arrow">&#8599;</span></a>
+		</section>
+
+		<section class="menu-section" aria-labelledby="menu-title">
+			<div class="section-heading">
+				<div><p class="eyebrow">ACCOUNT MENU</p><h2 id="menu-title">Everything in its place</h2></div>
+			</div>
+			<div class="menu-list">
+				<div id="guestMenu">
+					<button class="menu-item locked" type="button" data-message="Log in to see your saved buses."><span class="menu-icon">&#9632;</span><span><strong>My Buses</strong><small>Manage the buses you own</small></span><span class="lock">&#128274;</span></button>
+					<button class="menu-item locked" type="button" data-message="Log in to add a bus."><span class="menu-icon">&#43;</span><span><strong>Add Bus</strong><small>Manage your buses after login</small></span><span class="lock">&#128274;</span></button>
+					<button class="menu-item locked" type="button" data-message="Log in to control live location."><span class="menu-icon">&#9678;</span><span><strong>Live Location</strong><small>Turn location sharing on or off</small></span><span class="lock">&#128274;</span></button>
+				</div>
+				<a class="menu-item" href="../settings/index.html"><span class="menu-icon">&#9881;</span><span><strong>Settings</strong><small>Account, privacy, and notifications</small></span><span class="arrow">&#8599;</span></a>
+				<a class="menu-item" href="../help/index.html"><span class="menu-icon">&#63;</span><span><strong>Help &amp; Support</strong><small>FAQ and contact support</small></span><span class="arrow">&#8599;</span></a>
+				<a class="menu-item" href="../about/index.html"><span class="menu-icon">&#105;</span><span><strong>About BusTravel</strong><small>Learn about the application</small></span><span class="arrow">&#8599;</span></a>
+				<button class="menu-item logout" id="logoutButton" type="button" hidden><span class="menu-icon">&#8594;</span><span><strong>Logout</strong><small>Sign out of this account</small></span></button>
+			</div>
+			<p class="message" id="profileMessage" role="status"></p>
+		</section>
+	</main>
+
+	<footer class="bottom-nav"><a href="../home/index.html"><span>&#8962;</span>Home</a><a class="active" href="index.html"><span>&#9673;</span>Profile</a></footer>
+	<script src="script.js"></script>
+</body>
+</html>

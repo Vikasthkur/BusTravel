@@ -1,0 +1,1 @@
+window.BUS_TRAVEL_FIREBASE_CONFIG = null;

@@ -1,0 +1,20 @@
+{
+  "name": "bustravel-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BusTravel API and static frontend server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test-api.js"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/cli": "^8.5.2",
+    "@capacitor/core": "^8.5.2",
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^13.0.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.3"
+  }
+}

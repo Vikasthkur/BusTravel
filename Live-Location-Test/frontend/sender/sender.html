@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Live Location Sender</title>
+    <link rel="stylesheet" href="sender.css">
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">PHONE A</p>
+      <h1>Send live location</h1>
+      <p>Start sharing this phone's current GPS position with the viewer.</p>
+      <button id="toggleButton" type="button">Start sharing</button>
+      <p id="status" role="status">Sharing is off.</p>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+    <script src="../firebase-config.js"></script>
+    <script src="../firebase-client.js"></script>
+    <script src="sender.js"></script>
+  </body>
+</html>

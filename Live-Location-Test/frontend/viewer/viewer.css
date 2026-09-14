@@ -1,0 +1,38 @@
+:root {
+  color: #132321;
+  background: #f5f4ed;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+.eyebrow {
+  color: #0d6b68;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 6vw, 3rem);
+  margin: 12px 0 8px;
+}
+
+#status {
+  color: #667571;
+  margin: 0;
+}
+
+#map {
+  height: calc(100vh - 170px);
+  min-height: 360px;
+  width: 100%;
+}

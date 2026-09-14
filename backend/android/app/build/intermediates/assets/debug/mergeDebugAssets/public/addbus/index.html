@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Add Bus | BusTravel</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+		<header class="page-header"><a href="../profile/index.html" aria-label="Back to Profile">&#8592;</a><h1>Add Bus</h1><span></span></header>
+		<section class="intro"><div class="bus-mark">&#9632;</div><h2>Add Your Bus</h2><p>Add only the information passengers need to find your bus.</p></section>
+		<form id="addBusForm">
+			<fieldset><legend>BUS DETAILS</legend>
+				<label>Bus Name<input required name="name" placeholder="Enter bus name"></label>
+				<label>Bus / Plate Number<input required name="number" placeholder="Enter vehicle number"></label>
+				<label>Bus Type<select required name="type"><option value="">Select bus type</option><option>Express</option><option>City Bus</option><option>Intercity</option></select></label>
+			</fieldset>
+			<fieldset><legend>ROUTE DETAILS</legend>
+				<label>Starting Point<div class="input-with-icon"><span>&#9673;</span><input required name="start" placeholder="Enter starting point"></div></label>
+				<label>Destination<div class="input-with-icon"><span>&#9673;</span><input required name="destination" placeholder="Enter destination"></div></label>
+			</fieldset>
+			<fieldset><legend>BUS STOPS</legend><div id="stops"><label>Stop 1<input required name="stop" placeholder="Enter stop"></label><label>Stop 2<input required name="stop" placeholder="Enter stop"></label></div><button class="add-stop" id="addStop" type="button">&#43; Add Stop</button></fieldset>
+			<fieldset><legend>DRIVER</legend><label>Assign Driver<select name="driver"><option value="">Select / Add Driver</option><option>City Express Driver</option><option>+ Add Driver</option></select></label></fieldset>
+			<button class="submit-button" type="submit">&#9632; Add Bus</button><p id="message" role="status"></p>
+		</form>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">BusTravel</string>
+    <string name="title_activity_main">BusTravel</string>
+    <string name="package_name">com.bustravel.app</string>
+    <string name="custom_url_scheme">com.bustravel.app</string>
+</resources>

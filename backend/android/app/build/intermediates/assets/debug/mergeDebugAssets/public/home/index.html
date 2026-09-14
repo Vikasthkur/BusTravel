@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BusTravel helps you find buses, understand routes, and follow live bus locations.">
+  <title>BusTravel | Find your bus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand" aria-label="BusTravel">
+      <span class="brand-mark">B</span>
+      <span>BusTravel</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">BUS INFORMATION, WITHOUT THE GUESSWORK</p>
+        <h1 id="page-title">Know the bus.<br><em>Own the journey.</em></h1>
+        <p class="intro">Find a bus, follow its route, and see its latest available location.</p>
+      </div>
+
+      <div class="search-panel" aria-label="Find a bus">
+        <div class="field-row">
+          <a class="location-field" href="../location/index.html?type=from">
+            <span class="field-icon">&#9673;</span>
+            <span class="field-text">
+              <small>FROM</small>
+              <span id="fromValue">Choose starting point</span>
+            </span>
+          </a>
+          <a class="location-field" href="../location/index.html?type=to">
+            <span class="field-icon destination">&#9673;</span>
+            <span class="field-text">
+              <small>TO</small>
+              <span id="toValue">Choose destination</span>
+            </span>
+          </a>
+        </div>
+        <button class="search-button" id="searchButton" type="button"><span>&#8594;</span> Search buses</button>
+        <p class="form-message" id="formMessage" role="status"></p>
+      </div>
+    </section>
+
+    <section class="quick-actions" aria-labelledby="quick-actions-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">START HERE</p>
+          <h2 id="quick-actions-title">What do you need?</h2>
+        </div>
+        <span class="route-line" aria-hidden="true"></span>
+      </div>
+      <div class="action-grid">
+        <a class="action-card accent" href="../qr/index.html">
+          <span class="action-icon">&#9635;</span>
+          <span><strong>Scan a bus QR</strong><small>Open bus details instantly</small></span>
+          <span class="card-arrow">&#8599;</span>
+        </a>
+        <a class="action-card" href="../findbus/index.html?nearby=true">
+          <span class="action-icon">&#9678;</span>
+          <span><strong>Nearby buses</strong><small>See buses at a chosen place</small></span>
+          <span class="card-arrow">&#8599;</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bottom-nav" aria-label="Primary navigation">
+    <a class="nav-item active" href="index.html"><span>&#8962;</span>Home</a>
+    <a class="nav-item" href="../profile/index.html"><span>&#9673;</span>Profile</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

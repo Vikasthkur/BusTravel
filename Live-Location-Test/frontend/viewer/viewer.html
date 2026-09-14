@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Live Location Viewer</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIINfQ3mZ0Jx6M5h5bJ6r3w0P3XwT0fZ0pM="
+      crossorigin="">
+    <link rel="stylesheet" href="viewer.css">
+  </head>
+  <body>
+    <header>
+      <p class="eyebrow">PHONE B</p>
+      <h1>Latest shared location</h1>
+      <p id="status" role="status">Waiting for Phone A...</p>
+    </header>
+    <main id="map" aria-label="Map showing the latest shared location"></main>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+    <script src="../firebase-config.js"></script>
+    <script src="../firebase-client.js"></script>
+    <script src="viewer.js"></script>
+  </body>
+</html>
